@@ -4,27 +4,45 @@ import { SectionHeading } from "./section-heading"
 const documents = [
   {
     icon: ScrollText,
-    type: "Cortometraje escrito",
-    title: "Bajo la Lluvia",
-    detail: "Guion literario · 14 páginas",
+    type: "Cortometraje",
+    title: "La profecía incorrecta",
+    detail: "Guion completo",
+    href: "/Profecia incorrecta.pdf",
   },
   {
     icon: FileText,
-    type: "Escena",
-    title: "El Último Café — Secuencia final",
-    detail: "Fragmento dramático · 3 páginas",
+    type: "Cortometraje",
+    title: "Script My Project (Versión rostro con gusanos)",
+    detail: "Guion completo",
+    href: "/Script My Project (Versión rostro con gusanos).pdf",
   },
   {
     icon: ClipboardList,
-    type: "Tratamiento",
-    title: "Camino de Polvo",
-    detail: "Tratamiento de largometraje · 8 páginas",
+    type: "Cortometraje",
+    title: "Money v1",
+    detail: "Guion completo",
+    href: "/Money v1.pdf",
   },
   {
     icon: ListOrdered,
-    type: "Escaleta",
-    title: "La Mesa Vacía",
-    detail: "Escaleta por secuencias · 2 páginas",
+    type: "Cortometraje",
+    title: "Money v2",
+    detail: "Guion completo",
+    href: "/Money v2.pdf",
+  },
+  {
+    icon: FileText,
+    type: "Cortometraje",
+    title: "Los boxeadores no lloran",
+    detail: "Guion completo",
+    href: "/Los boxeadores no lloran.pdf",
+  },
+  {
+    icon: ScrollText,
+    type: "Cortometraje",
+    title: "Bombón",
+    detail: "Guion completo",
+    href: "/Bombón.pdf",
   },
 ]
 
@@ -35,15 +53,18 @@ export function Scripts() {
         <SectionHeading index="04" title="Guiones" kicker="Escritura" />
 
         <p className="mt-6 max-w-2xl leading-relaxed text-muted-foreground">
-          Una selección de mi trabajo escrito: cortometrajes completos, escenas sueltas, tratamientos
-          y escaletas. Documentos disponibles bajo solicitud.
+          Una selección de mi trabajo escrito: cortometrajes completos y tratamientos. Descarga los
+          guiones directamente desde aquí.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {documents.map((d) => (
             <a
               key={d.title}
-              href="#contacto"
+              href={d.href}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-5 rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/60"
             >
               <div className="flex size-12 shrink-0 items-center justify-center rounded-md bg-primary/15 text-primary">
