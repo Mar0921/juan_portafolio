@@ -42,7 +42,7 @@ const projects: Project[] = [
     duration: "5 min",
     genre: "Terror",
     role: "Director, guionista, productor, montajista, asis. arte",
-    cover: "/images/project-2.png",
+    cover: "/ddb1.jpeg",
     synopsis:
       "Durante una entrevista, un hombre atormentado revela los aterradores acontecimientos que comenzaron después de encontrar un antiguo libro de brujería y pronunciar en voz alta un misterioso hechizo. Desde entonces, una enigmática figura conocida como la Dama de Blanco lo persigue sin descanso, apareciendo cada vez más cerca de él. Mientras la realidad se distorsiona y el miedo consume su cordura, la entrevista se convierte en el escenario de una inquietante confrontación donde descubrir la verdad podría significar enfrentarse a una presencia imposible de detener.",
     learned:
@@ -52,8 +52,8 @@ const projects: Project[] = [
       href: "https://www.youtube.com/watch?v=XTvBauwixBA&t=1s",
     },
     captures: [
-      { src: "/images/capture-2.png", alt: "Figura enigmática en la penumbra" },
-      { src: "/images/gallery-rodaje.png", alt: "Set de rodaje de terror" },
+      { src: "/ddb2.jpeg", alt: "Figura enigmática en la penumbra" },
+      { src: "/ddb3.jpeg", alt: "Set de rodaje de terror" },
     ],
   },
   {
