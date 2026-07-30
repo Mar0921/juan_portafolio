@@ -92,14 +92,14 @@ const projects: Project[] = [
     duration: "5 min",
     genre: "Drama",
     role: "Dir. sonido",
-    cover: "/images/project-2.png",
+    cover: "/npe1.jpeg",
     synopsis:
       "En un barrio donde la violencia se ha vuelto parte del paisaje cotidiano, Lorena envía a su hijo Juan David a hacer un sencillo mandado. Lo que parecía una mañana cualquiera se transforma en una angustiosa espera cuando una balacera irrumpe en la tranquilidad de la cuadra. Mientras el miedo y la incertidumbre consumen a una madre que solo desea volver a ver a su hijo con vida, ambos enfrentarán una realidad en la que la violencia ha sido tan normalizada que amenaza con borrar el valor de la vida y la empatía.",
     learned:
       "Aprendí todo lo que se sabe sobre sonido, frecuencias y espacio sonoro.",
     captures: [
-      { src: "/images/capture-2.png", alt: "Calle tranquila antes de la balacera" },
-      { src: "/images/gallery-rodaje.png", alt: "Rodaje en exteriores del barrio" },
+      { src: "/npe2.jpeg", alt: "Calle tranquila antes de la balacera" },
+      { src: "/npe3.jpeg", alt: "Rodaje en exteriores del barrio" },
     ],
   },
   {
