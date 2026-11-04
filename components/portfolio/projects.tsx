@@ -11,6 +11,7 @@ type Project = {
   cover?: string
   synopsis?: string
   learned: string
+  highlight?: string
   link?: { label: string; href: string }
   captures?: { src: string; alt: string }[]
 }
@@ -129,6 +130,7 @@ const projects: Project[] = [
     genre: "Drama",
     role: "Director, guionista, productor, montajista, diseño sonoro, actor",
     cover: "/bombon1.jpeg",
+    highlight: "Nominado Smartfilms 2026",
     synopsis:
       "Martín, un joven boxeador con el sueño de convertirse en campeón mundial, lleva una vida marcada por los excesos y los malos hábitos alimenticios, ignorando las señales de que algo no está bien con su cuerpo. Mientras su rendimiento físico se deteriora y una lesión aparentemente menor cambia el rumbo de su carrera, descubre que enfrenta una enfermedad que transformará por completo su futuro. Obligado a aceptar una nueva realidad, Martín deberá decidir entre aferrarse a sus viejas costumbres o aprender a vivir con una condición que pondrá a prueba su fortaleza dentro y fuera del ring.",
     learned:
@@ -140,6 +142,21 @@ const projects: Project[] = [
     captures: [
       { src: "/bombon2.jpeg", alt: "Martín entrenando como boxeador" },
       { src: "/bombon3.jpeg", alt: "Detrás de cámaras de Bombón" },
+    ],
+  },
+  {
+    title: "RADICAL",
+    year: "2026",
+    duration: "Aún en montaje",
+    genre: "Drama",
+    role: "3AC Video Asis",
+    cover: "/R1.jpeg",
+    synopsis:" de 20 años hincha del Deportivo Cali, recientemente convertido en padre, sale del hospital con su cuerpo marcado y su espíritu fracturado tras meses de convalecencia luego de un enfrentamiento con un rival. Su necesidad de empleo choca con un muro cuando su pasado como barrista sale a relucir dejándolo sin opciones en su intento por mantener una vida de familia. Por ello, Samuel acude una vez más a su grupo de amigos de la barra brava, avivando su pasión futbolera e involucrándose con los negocios y enfrentamientos en el barrio, lo que desatará una nueva violencia a su alrededor que pondrá en peligro su relación familiar y las vidas de su novia e hija. La tragedia alcanza su punto máximo dejando un rastro de destrucción a su paso. Entonces Samuel se enfrentará a una elección imposible: huir o enfrentar las consecuencias de sus acciones.",
+    learned:
+      "Trabajé como Asistente de Cámara (3AC) bajo la dirección del 1AC y el Director de Fotografía, con fechas de rodaje del 05 al 31 de octubre hacia el sur de Cali.",
+    captures: [
+      { src: "/R2.jpeg", alt: "RADICAL captura 1" },
+      { src: "/R3.jpeg", alt: "RADICAL captura 2" },
     ],
   },
 ]
@@ -204,6 +221,14 @@ export function Projects() {
                 <h3 className="mt-1 font-display text-4xl uppercase leading-none text-foreground sm:text-5xl">
                   {p.title}
                 </h3>
+                {p.highlight && (
+                  <div className="mt-3 flex items-center gap-3">
+                    <Image src="/smartfilms.jpeg" alt="Smartfilms" width={80} height={32} className="h-8 w-auto object-contain" />
+                    <span className="inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                      {p.highlight}
+                    </span>
+                  </div>
+                )}
 
                 <dl className="mt-6 grid grid-cols-2 gap-5 border-y border-border py-6 sm:grid-cols-4">
                   <Meta label="Año" value={p.year} />
